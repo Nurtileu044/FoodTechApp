@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/childContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:hideOnScroll="false"
+        app:layout_anchor="@id/childContainer"
+        app:layout_anchorGravity="bottom"
+        app:layout_scrollFlags="scroll|snapMargins">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                app:itemIconTint="@color/bottom_navigation_item_selector"
+                app:itemTextAppearanceActive="@color/purple_500"
+                app:itemTextAppearanceInactive="@color/unselected"
+                app:itemTextColor="@color/bottom_navigation_item_selector"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_navigation" />
+        </FrameLayout>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

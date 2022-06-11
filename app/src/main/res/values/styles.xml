@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.TextAppearance" parent="TextAppearance.AppCompat.Body1" />
+
+    <style name="Base.TextAppearance.Regular">
+        <item name="android:textColor">@color/colorBlackText</item>
+    </style>
+
+    <style name="textStyleRegular12" parent="Base.TextAppearance.Regular">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="ErrorText.Small" parent="textStyleRegular12">
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+    <style name="EditTextColorStyleBlue">
+        <item name="colorControlActivated">@color/purple_500</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorBlackAlpha60</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextInputLayoutAppearanceBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="theme">@style/EditTextColorStyleBlue</item>
+        <item name="hintTextColor">@color/selector_color_input_box_black</item>
+        <item name="android:textColorHint">@color/colorBlackTextAlpha60</item>
+        <item name="boxStrokeColor">@color/selector_color_input_box_black</item>
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="suffixTextColor">@color/colorGrayTextDisabled</item>
+    </style>
+
+    <style name="TextInputLayoutAppearanceBox.Small">
+        <item name="hintTextAppearance">@style/textStyleRegular12</item>
+        <item name="errorTextAppearance">@style/ErrorText.Small</item>
+    </style>
+</resources>

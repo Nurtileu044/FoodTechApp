@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FoodTechApp</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="hits">Hits</string>
+    <string name="comments">Comments</string>
+    <string name="search">Search</string>
+    <string name="like_percent">%d%%</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="review_of_reviewer">%s о ресторане %s</string>
+</resources>
